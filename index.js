@@ -5,7 +5,7 @@ const logic = require('./services/logic')
 const contactServer= express()
 
 contactServer.use(cors({
-    origin:'http://localhost:3000'
+    origin:'process.env.FRONTEND_URL'
 
     
 }))
